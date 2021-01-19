@@ -877,7 +877,7 @@ pipelines:
         configuration:              
           foo: bar
           inputResources:
-           - name: step004
+           - name: step001_01
         execution:
           onStart:
             - echo "Preparing for work..."
