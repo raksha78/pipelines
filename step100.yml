@@ -1236,6 +1236,12 @@ pipelines:
             - printenv
             - echo ${res_step001_foo2}
             - printenv
+          onComplete:
+            - printenv
+          onSuccess:
+            - printenv
+          onFailure:
+            - printenv
 
       - name: step_1
         type: Bash
