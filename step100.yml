@@ -1,4 +1,9 @@
 resources:
+  - name: step001_01
+    type: Gitnp/gittest1
+    configuration:      
+      test: foo
+#     syntaxVersion: latest
   - name: step001
     type: Gitnp/gittest1
     syntaxVersion: latest
