@@ -1236,17 +1236,17 @@ pipelines:
             - name: connecting_resource1
           inputSteps:
             - name: step100
-        execution:
-          onStart:
-            - printenv
-            - echo ${res_step001_foo2}
-            - printenv
-          onComplete:
-            - printenv
-          onSuccess:
-            - printenv
-          onFailure:
-            - printenv
+#         execution:
+#           onStart:
+#             - printenv
+#             - echo ${res_step001_foo2}
+#             - printenv
+#           onComplete:
+#             - printenv
+#           onSuccess:
+#             - printenv
+#           onFailure:
+#             - printenv
 
       - name: step_1
         type: Bash
