@@ -6,7 +6,7 @@ resources:
       test: foo
       bdood: "present"
       #slack: slack_extension
-      Artifactory: art_v
+#       Artifactory: art_v
 #      Azure Keys: azure_extension
       #Bitbucket: bb_extension
       #Bitbucket Server : bbs_extension
@@ -16,7 +16,7 @@ resources:
 #      File Server : FS_extension
       #Google Cloud : GC_extension
       #Generic Integration : generic_extension
-      GitHub : git_v
+      GitHub : github
       # Github Enterprise : ghe_extension
       #GitLab : gL_extension
       # Incoming Webhook : IW_extension
@@ -224,7 +224,7 @@ resources:
     configuration:      
       test: foo
      # slack: slack_extension
-      Artifactory: art_v
+#       Artifactory: art_v
 #      Azure Keys: azure_extension
    #   Bitbucket: bb_extension
    #   Bitbucket Server : bbs_extension
@@ -234,7 +234,7 @@ resources:
 #      File Server : FS_extension
      # Google Cloud : GC_extension
      # Generic Integration : generic_extension
-      GitHub : git_v
+      GitHub : github
       # Github Enterprise : ghe_extension
    #   GitLab : gL_extension
       # Incoming Webhook : IW_extension
@@ -435,13 +435,13 @@ resources:
           - "jfr"
           - "jfr1"
           
-  - name: r_GitRepo
-    type: GitRepo
-    configuration:
-      path: vishnurao12/pipelines
-      branches:
-        include: master
-      gitProvider: git_v
+#   - name: r_GitRepo
+#     type: GitRepo
+#     configuration:
+#       path: vishnurao12/pipelines
+#       branches:
+#         include: master
+#       gitProvider: git_v
 
 pipelines:
   - name: extensionstest
@@ -459,7 +459,7 @@ pipelines:
 #            - name: cronTriggerResource
 #            - name: myDistributionRule
 #            - name: r_FileSpec_pattern
-            - name: r_GitRepo
+#             - name: r_GitRepo
             #- name: helm_repo
             #- name: image_google
 #            - name: r_IncomingWebhook
