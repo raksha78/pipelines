@@ -468,8 +468,8 @@ pipelines:
 #            - name: my_releaseBundle
 #            - name: r_FileSpec_pattern
 #            - name: VmCluster_resource
-          outputResources:
-             - name: step001
+#           outputResources:
+#              - name: step001
         execution:
           onStart:
             - echo "Preparing for work..."
