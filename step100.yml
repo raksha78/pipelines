@@ -875,7 +875,7 @@ pipelines:
         syntaxVersion: latest
         configuration:              
           foo: bar
-           inputResources:
+          inputResources:
              - name: step004
              - name: resource005
              - name: r_Aql
