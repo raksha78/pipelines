@@ -872,7 +872,7 @@ pipelines:
 
 
       - name: step100_1
-        type: gitcheck/gitstep
+        type: gitstep
         syntaxVersion: 1.0.0 
         configuration:              
           foo: bar
