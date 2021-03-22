@@ -690,7 +690,7 @@ resources:
   - name: r_GitRepo
     type: GitRepo
     configuration:
-      path: vishnurao12/pipelines
+      path: raksha78/pipelines
       branches:
         include: master
       gitProvider: git_v
