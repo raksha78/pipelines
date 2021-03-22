@@ -1154,11 +1154,11 @@ pipelines:
           onStart:
             - echo "Preparing for work..."
             # - get_integration_name --type Airbrake
-            - get_integration_name --type slack
+            - get_integration_name --type Slack
             - get_integration_name --type AWS
             - get_integration_name --type Artifactory
             - get_integration_name --type Azure Keys
-            - get_integration_name --type Bitbucket
+            - get_integration_name  Bitbucket
             - get_integration_name --type Bitbucket Server
             - get_integration_name --type Distribution
 #            - get_integration_name --type Digital Ocean
