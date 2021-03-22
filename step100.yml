@@ -29,7 +29,7 @@ resources:
       # SMTP Credentials : SMTP_extension
       # SSH Key: SSH_extension
       # Airbrake : air_extension
-      foo1 : "lol"
+      foo1 : "namelol"
 #       foo1a : "lolwithoutImu"
       foo2 : 3
       foo3 : false
