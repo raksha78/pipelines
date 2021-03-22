@@ -1,5 +1,4 @@
 resources:
- 
   - name: step001
     type: Gitnp/gittest1
     syntaxVersion: latest
@@ -858,26 +857,49 @@ pipelines:
 #             - chmod +x common.js
 #             - ./common.js
 #             - node common/common.js
-            - get_resource_name --namespace Gitnp2 --type test --operation OUT
-            - get_resource_name --namespace Gitnp2 --type test --operation OUT --syntax-version latest
-            - get_resource_name --namespace Gitnp2 --type test --operation OUT --syntax-version 9.9.9
-#             - get_resource_name --namespace Gitnp2 --type test --operation IN
-#             - get_resource_name --namespace Gitnp2 --type test --operation IN --syntax-version latest 
-#             - get_resource_name --namespace Gitnp2 --type test --operation IN --syntax-version 9.9.9
-#           onExecute:
-#             - echo "sup"
+#             - get_resource_name --namespace Gitnp2 --type gittest --operation OUT
+#             - get_resource_name --namespace Gitnp2 --type gittest --operation OUT --syntax-version 1.0.12
+#             - get_resource_name --namespace Gitnp2 --type gittest --operation OUT --syntax-version 9.9.9
+            - get_resource_name --namespace Gitnp2 --type test --operation IN
+            - get_resource_name --namespace Gitnp2 --type test --operation IN --syntax-version latest 
+            - get_resource_name --namespace Gitnp2 --type test --operation IN --syntax-version 9.9.9
 
 #       - name: step100_1
 #         type: gitcheck/gitstep
-# #         syntaxVersion: latest
+#         syntaxVersion: latest
 #         configuration:              
 #           foo: bar
-#           inputResources:
-#            - name: step001_01
+#            inputResources:
+#            - name: step004
+#            - name: resource005
+#            - name: r_Aql
+#            - name: myBuildInfo
+#            - name: cronTriggerResource
+#            - name: myDistributionRule
+#            - name: r_FileSpec_pattern
+#            - name: r_GitRepo
+#            - name: helm_repo
+#            - name: image_google
+#            - name: r_IncomingWebhook
+#            - name: outgoingWebhook
+#            - name: mypropertyBag
+#            - name: my_releaseBundle
+#            - name: r_FileSpec_pattern
+#            - name: VmCluster_resource
+#           outputResources:
+#             - name: connecting_resource1
+#             - name: step001
+#             - name: step004
 #         execution:
 #           onStart:
 #             - echo "Preparing for work..."
 #             - printenv
+#             - get_resource_name --namespace Gitnp2 --type test --operation OUT
+#             - get_resource_name --namespace Gitnp2 --type test --operation OUT --syntax-version latest
+#             - get_resource_name --namespace Gitnp2 --type test --operation OUT --syntax-version 9.9.9
+#             - get_resource_name --namespace Gitnp2 --type test --operation IN
+#             - get_resource_name --namespace Gitnp2 --type gittest --operation IN --syntax-version 1.0.12
+#             - get_resource_name --namespace Gitnp2 --type gittest --operation IN --syntax-version 9.9.9
 
       - name: step111
         type: newgitS/steptest
@@ -1232,17 +1254,11 @@ pipelines:
             - name: connecting_resource1
           inputSteps:
             - name: step100
-#         execution:
-#           onStart:
-#             - printenv
-#             - echo ${res_step001_foo2}
-#             - printenv
-#           onComplete:
-#             - printenv
-#           onSuccess:
-#             - printenv
-#           onFailure:
-#             - printenv
+        execution:
+          onStart:
+            - printenv
+            - echo ${res_step001_foo2}
+            - printenv
 
       - name: step_1
         type: Bash
