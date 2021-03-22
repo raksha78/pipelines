@@ -827,7 +827,7 @@ pipelines:
     steps:
       - name: step100
         type: gitcheck/gitstep
-        syntaxVersion: 1.0.0 
+#         syntaxVersion: 1.0.0 
         configuration:              
           foo: bar
           inputResources:
