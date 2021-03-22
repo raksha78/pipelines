@@ -1,7 +1,7 @@
 resources:
   - name: step001
     type: Gitnp/gittest1
-    syntaxVersion: 1.3.5
+    syntaxVersion: latest
     configuration:      
       test: foo
       bdood: "present"
@@ -29,7 +29,7 @@ resources:
       # SMTP Credentials : SMTP_extension
       # SSH Key: SSH_extension
       # Airbrake : air_extension
-      foo1 : "vishnulol"
+      foo1 : "vishnu78lol"
 #       foo1a : "lolwithoutImu"
       foo2 : 3
       foo3 : false
