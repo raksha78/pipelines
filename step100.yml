@@ -872,7 +872,7 @@ pipelines:
 
       - name: step100_1
         type: gitstep
-        syntaxVersion: latest
+#         syntaxVersion: latest
         configuration:              
           foo: bar
           inputResources:
