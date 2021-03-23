@@ -1159,7 +1159,7 @@ pipelines:
             - get_integration_name --type Artifactory
             - get_integration_name --type Azure Keys
             - get_integration_name  Bitbucket
-            - get_integration_name --type Bitbucket Server
+            - get_integration_name --type bitbucketServerBasic
             - get_integration_name --type Distribution
 #            - get_integration_name --type Digital Ocean
             - get_integration_name --type Docker Registry
