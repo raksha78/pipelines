@@ -31,7 +31,7 @@ resources:
       # Airbrake : air_extension
       foo1 : "vishlol"
 #       foo1a : "lolwithoutImu"
-      foo2 : 3
+      foo2 : 2
       foo3 : false
       foo4 : http://www.jfrognew.com
       foo5 : temp@jfrognew.com
