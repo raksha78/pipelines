@@ -13,6 +13,8 @@ pipelines:
                  - exit 1
            - name: step_2
              type: Bash
+             inputStep:
+               step_1
              execution:
                onExecute:
                  - echo $MY_MESSAGE
