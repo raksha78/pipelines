@@ -14,7 +14,7 @@ pipelines:
            - name: step_2
              type: Bash
              inputStep:
-               step_1
+                 - step_1
              execution:
                onExecute:
                  - echo $MY_MESSAGE
