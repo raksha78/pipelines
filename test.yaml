@@ -1,0 +1,18 @@
+pipelines:
+     - name: try_01
+       configuration:
+          environmentVariables:
+            readOnly:
+              MY_MESSAGE: '"Hello World!"'
+       steps:
+           - name: step_1
+             type: Bash
+             execution:
+               onExecute:
+                 - echo $MY_MESSAGE
+                 - exit 1
+           - name: step_2
+             type: Bash
+             execution:
+               onExecute:
+                 - echo $MY_MESSAGE
