@@ -10,11 +10,14 @@ pipelines:
              execution:
                onExecute:
                  - echo $MY_MESSAGE
+                 - blah
                  - exit 1
+                 
            - name: step_2
              type: Bash
-             inputStep:
-                 - step_1
+             configuration:
+               inputSteps:
+                 - name: step_1
              execution:
                onExecute:
                  - echo $MY_MESSAGE
