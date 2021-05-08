@@ -29,4 +29,3 @@ pipelines:
                 - koo
               allowCustom: false
             step_env2: flower
-              allowCustom: false
