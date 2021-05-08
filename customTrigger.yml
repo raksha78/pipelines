@@ -4,9 +4,7 @@ pipelines:
       environmentVariables:
         readOnly:
           env1: cat
-            allowCustom: false
           env2:
-            allowCustom: false
             default: fat
             description: I am not fat
             values:
