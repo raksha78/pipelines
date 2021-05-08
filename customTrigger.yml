@@ -17,6 +17,7 @@ pipelines:
         execution:
           onStart:
             - echo "prepare for main execution"
+            - printenv
         configuration:
           environmentVariables:
             step_env1:
