@@ -10,7 +10,7 @@ pipelines:
             values:
               - cat
               - dog
-              - pig
+              - fat
     steps:
       - name: my_step
         type: Bash
@@ -21,7 +21,7 @@ pipelines:
               description: no bar 
               values:
                 - foo
-                - boo
+                - bar
                 - koo
               allowCustom: true
             step_env2: flower
