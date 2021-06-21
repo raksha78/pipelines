@@ -27,5 +27,5 @@ pipelines:
                 - foo
                 - bar
                 - koo
-              allowCustom: false
+              allowCustom: true
             step_env2: flower
